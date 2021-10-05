@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="ISO88-59-1">
+	<title>Home Page</title>
+</head>
+
+<body>
+	<h4 th:text="${msg}" />
+	<h3>Programmers Data</h3>
+	<form action="saveEmploy" method="POST">
+		<h5>Enter Name: </h5>
+		<input type="text" name="name" />
+
+		<h5>Enter Spec.: </h5>
+		<input type="text" name="spec" />
+		<button type="submit">Save</button>
+	</form>
+
+	<hr>
+
+	<form action="findEmployById" method="GET">
+		<h5>Enter Employ Id: </h5>
+		<input type="text" name="eId" />
+		<button type="submit">Find</button>
+	</form>
+	
+	<form action="findEmployByName" method="GET">
+		<h5>Enter Employ Name: </h5>
+		<input type="text" name="name" />
+		<button type="submit">Find</button>
+	</form>
+
+	<form action="findEmployBySpec" method="GET">
+		<h5>Enter Employ Specification: </h5>
+		<input type="text" name="spec" />
+		<button type="submit">Find</button>
+	</form>
+
+	<form action="deleteEmployById" method="GET">
+		<h5>Enter Employ Id: </h5>
+		<input type="text" name="eId" />
+		<button type="submit">Delete</button>
+	</form>
+
+	<hr>
+	<form action="updateEmploy" method="POST">
+		<h5>Enter Employ Id: </h5>
+		<input type="text" name="id" />
+
+		<h5>Enter Name: </h5>
+		<input type="text" name="name" />
+
+		<h5>Enter Spec.: </h5>
+		<input type="text" name="spec" />
+		<button type="submit">Update</button>
+	</form>
+
+</body>
+
+</html>

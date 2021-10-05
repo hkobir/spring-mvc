@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="ISO88-59-1">
+	<title>Profile Page</title>
+</head>
+
+<body>
+	<h4 th:text="${msg}" />
+	<h3>Programmer Info: </h3>
+	<div> Id:
+		<span th:text="${employ.id}" />
+	</div>
+	<div>Name:
+		<span th:text="${employ.name}" />
+	</div>
+	<div>Specification:
+		<span th:text="${employ.spec}" />
+	</div>
+</body>
+
+</html>
